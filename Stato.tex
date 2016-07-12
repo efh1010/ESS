@@ -1,0 +1,354 @@
+%configurazioni	
+	\documentclass[10pt,a4paper]{report}
+	\usepackage{graphicx}
+	\usepackage[utf8]{inputenc}
+	\usepackage{amssymb,amsmath}
+	\usepackage{geometry}
+	\usepackage[italian]{babel}  
+	\usepackage[bookmarks=true]{hyperref}
+	\usepackage{bookmark}
+	\geometry{letterpaper}	
+
+\hypersetup{
+	pdftitle={Elettronica dello stato solido},%
+	pdfauthor={Edoardo Contini},%
+	pdfsubject={Elettronica dello stato solido},%
+	pdfkeywords={},%
+	colorlinks=true,%
+	linkcolor=blue,%
+	linktocpage=true,%
+	pageanchor=true
+}
+
+
+\begin{document}
+
+
+\begin{titlepage}
+
+	\centering
+	{\scshape\huge\textbf Politecnico di Milano \par}
+	\vspace{0.5cm}
+
+	\includegraphics[width=0.15\textwidth]{logo.png}\par\vspace{0.2cm}
+	
+	{\scshape\small Facoltà di ingegneria\par}
+	{\scshape\small Dipartimento di elettronica e informazione\par}
+	\vspace{1.5cm}
+	{\huge\bfseries Elettronica dello stato solido\par}
+	\vspace{1.5cm}
+	{\scshape Appunti\par}
+	{\scshape\small 2015-2016 \par}
+	\vspace{2cm}
+	%{\Large\itshape Edoardo Contini\par}
+	\vfill
+    \raggedleft{Professore: \\ \textit{Daniele Ielimini}}	
+    \\[1cm]
+	
+	\raggedright
+    {Studente:\\ \textit{Edoardo Contini}
+	
+	}\vfill
+	\raggedleft
+	{\large \today\par}
+	
+	\raggedright
+	\textit{La risposta è dentro di voi (ma è sbagliata)}.
+	{\\Corrado Guzzanti}
+	\end{titlepage}
+
+%\maketitle
+
+
+\tableofcontents
+
+\pdfbookmark{\contentsname}{Indice}
+
+
+\chapter{Strutture Cristalline}
+
+	\section{Reticoli di Bravais}
+	
+		\subsection{Basi}
+			Avendo un reticolo che non è un reticolo di Bravais, è possibile in alcuni casi definire una base che faccia diventare il reticolo una struttura di Bravais.
+		
+		\subsection{Cella unitaria}
+
+			Si definisce cella primitiva unitaria di un reticolo un volume di spazio che, traslato attraverso tutti i vettori di un reticolo di Bravais, riempie completamente il reticolo senza sovrapposizioni e senza lasciare spazi vuoti.
+
+		\subsection{Cella primitiva unitaria}
+			Una cella primitiva è una cella unitaria che contiene un solo punto del reticolo, ed ha stessa simmetria del reticolo.
+		
+		\subsection{Cella di Wigner-Seitz}
+				La cella di Wigner-Seitz attorno ad un punto di un reticolo di Bravais è la cella primitiva che gode di tutte le proprietà di simmetria della struttura.
+			
+			
+			%	\centering
+			%	{\includegraphics[width=0.15\textwidth]{Wigner.png}}
+			
+	
+	\section{Reticoli notevoli}
+		
+		\subsection{Reticolo cubico semplice}
+			
+			%\begin{figure}
+			%	\centering
+			%	{\includegraphics[width=0.15\textwidth]{cs.png}}
+			%\end{figure}
+	
+		\subsection{Reticolo cubico a facce centrate}
+	
+			%\begin{figure}
+			%	\centering
+			%	{\includegraphics[width=0.15\textwidth]{fcc.png}}
+			%\end{figure}
+	
+		\subsection{Reticolo cubico a corpo centrato}
+	
+			%\begin{figure}
+			%	\centering
+			%	{\includegraphics[width=0.15\textwidth]{bcc.png}}
+			%\end{figure}
+	
+		\subsection{Struttura Diamante}
+				La struttura del diamante è formata da due FCC compenetrati lungo la diagonale del cubo di un quarto della diagonale stessa.
+			%\begin{figure}
+			%	\centering
+			%	{\includegraphics[width=0.15\textwidth]{diamante.png} }
+			%\end{figure}
+	
+		\subsection{Struttura zincomblenda}
+				La struttura dello zincoblenda è simile a quella del diamante con la differenza che mentre nel diamante la base è formata da sua atomi identici nello zincoblenda la base è formata da due atomi diversi.
+
+				Questo tipo di struttura è tipica dei semiconduttori formati da elementi del terzo del quinto gruppo.
+
+		\section{Densità atomica}
+		La densità atomica si calcola come:
+
+		\[
+		n=\frac{\#_{atomi \ per \ cella}}{volume \ cella}
+		\]
+
+		\subsection{Reticolo esagonale compatto}
+
+	%		\begin{figure}
+	%			\centering
+	%			{\includegraphics[width=0.15\textwidth]{hcc.png} }
+	%		\end{figure}
+
+
+\chapter{Reticolo reciproco}
+
+\chapter{Diffrazione di Bragg}
+
+\[
+2dsin(\theta)=n\lambda
+\]
+
+	\section{Angoli di diffrazione}
+
+	\section{Distanza tra piani reticolo cubico semplice}
+
+\chapter{Relazione di De Broglie}
+
+\chapter{Effetto fotoelettrico}
+
+\chapter{Buche di potenziale}
+
+	\section{Apprssimazione buca a pareti infinite}
+
+	\section{Buche a paret finite}
+
+	\section{Buca parabolica}
+
+
+\chapter{Buche accoppiate}
+
+	\section{Soluzione pari}
+
+	\section{Soluzioni dispari}
+
+	\section{Splitting di energia}
+
+
+\chapter{Probabilità di tunneling}
+
+	\section{Barriera triangolare}
+
+	\begin{equation}
+	P_{tun}=e^{-\frac{4}{3} \frac { \sqrt{2m} } {\hslash q F} \Phi^ { \frac {3} {2} } }
+	\end{equation}
+	
+\chapter{Flussi e coefficienti di riflessione}
+
+	\section{Incidenza su un gradino di tensione positivo}
+
+		\subsection{Flusso incidente}
+
+		\subsection{Flusso trasmesso}
+
+		\subsection{Flusso riflesso}
+
+	
+	\section{Incidenza su un gradino di tensione negativo}
+
+
+		\subsection{Flusso incidente}
+
+		\subsection{Flusso trasmesso}
+
+		\subsection{Flusso riflesso}
+
+	\section{Incidenza su una barriera di tensione}
+
+		\subsection{Flusso incidente}
+
+		\subsection{Flusso trasmesso}
+
+		\subsection{Flusso riflesso}
+
+
+\chapter{Principio di indeterminazione di Heisenberg}
+
+\chapter{Transizioni di banda}
+
+\chapter{Minimi di conduzione}
+
+	\section{Massa conduzione}
+
+	\section{Massa DOS}
+	\begin{equation}
+	M_{DOS}
+	\end{equation}
+
+	
+	\section{Energia media}
+
+\chapter{Massa efficace}
+
+	\section{Massa efficace nel caso di bande multiple}
+
+	\section{Massa trasversale}
+
+	\section{Massa longitudinale}
+
+\chapter{Massa DOS}
+
+\chapter{Relazione di Drude}
+
+\[
+\frac{\textit{F}}{\hslash}=\frac{dk}{dt}+\frac{k}{\tau_m}
+\]
+
+\chapter{Iniezione di portatori in eccesso}
+
+	\section{Iniezione costante nel tempo}
+
+	\section{Iniezione a impulso temporale}
+
+	\section{Inizione superficiale}
+
+	\section{Iniezione uniforme}
+
+\chapter{Regime di freeze-out}
+
+\chapter{Regime intrinseco}
+
+\chapter{Funzioni di Bloch}
+
+	\section{Ampiezza oscillazioni di Bloch}
+
+	\section{Pulsazione oscillazioni di Bloch}
+
+\chapter{Effetto Hall}
+
+\chapter{Variazioni di Temperatuta}
+
+	\section{Mobilità}
+
+		\subsection{Scattering fononico}
+
+		\subsection{Urti con atmoni ionizzati}
+
+	\section{Densità di stati equivalente}
+
+	\section{Concentrazione di portatori}
+
+\chapter{Livelli donori}
+
+\chapter{Livello di Fermi}
+
+\chapter{Livello di quasi-Fermi}
+
+\chapter{Probabilità di ionizzazione}
+
+\chapter{Metalli}
+
+	\section{Livello di Fermi}
+
+		\subsection{Monodimensionale}
+
+		\subsection{Bidimensionale}
+
+		\subsection{Tridimensionale}
+
+\chapter{Potenza dissipata per scattering}
+
+\chapter{Relazione di dispersione}
+
+	\section{Velocità di fase}
+
+	\section{Velocità di gruppo}
+
+	\section{Massa efficace}
+
+
+\chapter{Atomi idrogenoidi}
+	
+	\section{Atomo di idrogeno}
+
+	L'ultimo stato dell'atomo di idrogeno\footnote{costante di Riedberg} è a energia $13,6eV$.
+	Possiamo quindi calcolare gli stati in un atomo di idrogeno come :
+
+	\[
+	E_n=-\frac{13.6eV}{n^2}
+	\] 
+
+	\section{Atomo idrogenoide}
+	Per il calcolo di energia e raggio si parte da tre equazioni:
+
+	\begin{itemize}
+	\item Quantizzazione di Bohr:   $mrv=\hslash$
+	\item Orbita circolare\footnote{Uguaglianza tra forza centripeta e forza elettrostatica}:	$ m \frac {v^2} {r} = \frac{q^2}{4\pi \epsilon r^2}$
+	\item Energia totale:	$E=E_c+E_p=\frac{1}{2}mv^2+qv=\frac{1}{2}mv^2-\frac{q^2}{4\pi \epsilon r}$
+	\end{itemize}
+		
+		\subsection{Raggio}
+
+		\[
+		R=\frac{4\pi \epsilon \hslash^2}{q^2 m}	
+		\]
+
+		\subsection{Energia}
+
+		\[
+		E=\frac{mq^4}{2(4\pi \epsilon)^2 \hslash^2}
+		\]
+
+\chapter{Temperatura e velocità di Fermi}
+
+\chapter{Velocità e campo di Saturazione}
+
+\chapter{Eccitoni}
+
+\chapter{Pacchetti d'onda}
+
+
+
+
+
+
+
+
+
+\end{document}
