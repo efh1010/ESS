@@ -129,34 +129,73 @@
 
 \chapter{Diffrazione di Bragg}
 
-\[
-2dsin(\theta)=n\lambda
-\]
-
 	\section{Angoli di diffrazione}
+	Dalla condizione di interferenza distruttiva si ottengono gli angoli associati ai picchi di diffrazione..
+
+	\[
+	2dsin(\theta)=n\lambda
+	\]
+
 
 	\section{Distanza tra piani reticolo cubico semplice}
 
+	Per quanto riguarda il reticolo cubico semplice è facile calcolare la distanza tra piani con la sequente:
+
+	\[
+	d=\frac{1}{\sqrt{a^2+b^2+c^3}}
+	\]
+
+	Dove "a" "b" e "c" sono gli indici di miller che indentificano le famiglie di piani.
 \chapter{Relazione di De Broglie}
+
+\[
+p=\frac {h}{\lambda}
+\]
+
 
 \chapter{Effetto fotoelettrico}
 
 \chapter{Buche di potenziale}
 
-	\section{Apprssimazione buca a pareti infinite}
+	\section{Approssimazione buca a pareti infinite}
 
-	\section{Buche a paret finite}
+	\section{Buche a pareti finite}
+
+	Per considerare la limitatezza delle pareti è necessario eseguire un algoritmo iterativo sulle 2 equazioni seguenti:
+
+	\[
+		E_n=\frac{h^2}{\sqrt{8m(a+\Delta x)^2}}
+	\]
+	In cui $\Delta x$ è la penetrazione dell'autofunzione nella barriera calcolata come:
+	\[
+	\Delta x = \frac{1}{\alpha}=\frac{\hslash}{\sqrt{2m(V-E)}}
+	\]
 
 	\section{Buca parabolica}
-
+	
+	\[
+	E_n = \sqrt{\frac{\alpha}{m}}\hslash(n+\frac{1}{2})
+	\]
 
 \chapter{Buche accoppiate}
 
 	\section{Soluzione pari}
-
+		\[
+		tan(ka)=0
+		\]
 	\section{Soluzioni dispari}
-
+		\[
+		tan(ka)= - \frac {\hslash ^ 2 k} {m u}
+		\]
 	\section{Splitting di energia}
+		\[
+		E_{n_{pari}}=E_{n_{dispari}} - \Delta E
+		\]
+	\section{Frequenza di oscillazione}
+		\[
+		\nu=\frac{\Delta E}{h} 
+		\]
+
 
 
 \chapter{Probabilità di tunneling}
@@ -210,23 +249,20 @@
 
 	\section{Massa conduzione}
 
+	Calcolo della massa DOS in presenza di minimi non isotropi.
+
 	\section{Massa DOS}
 	\begin{equation}
-	M_{DOS}
+	M_{DOS}^{\frac{3}{2}}=gm_t m_l^{\frac{1}{2}}
 	\end{equation}
 
+	Calcolo della massa DOS in prensenza di bande multiple.
+
+	\begin{equation}
+	M_{DOS}^{\frac{3}{2}} = m_{hh}^{\frac{3}{2}}+m_{lh}^{\frac{3}{2}}
+	\end{equation}
 	
 	\section{Energia media}
-
-\chapter{Massa efficace}
-
-	\section{Massa efficace nel caso di bande multiple}
-
-	\section{Massa trasversale}
-
-	\section{Massa longitudinale}
-
-\chapter{Massa DOS}
 
 \chapter{Relazione di Drude}
 
@@ -238,17 +274,23 @@
 
 	\section{Iniezione costante nel tempo}
 
-	\section{Iniezione a impulso temporale}
-
+	\section{Fotogeneraione deltiforme}
+	\[
+	p'(x,t)=\frac{N_g e^{-\frac {t}{\tau_p} } }{\sqrt{4\pi D_p t}}e^{-\frac{x^2+\mu_p F t}{4 D_p t}}
+	\]
 	\section{Inizione superficiale}
 
 	\section{Iniezione uniforme}
 
 \chapter{Regime di freeze-out}
 
+
+
 \chapter{Regime intrinseco}
 
 \chapter{Funzioni di Bloch}
+
+u_k
 
 	\section{Ampiezza oscillazioni di Bloch}
 
@@ -256,13 +298,20 @@
 
 \chapter{Effetto Hall}
 
+Ricordiamo che nell'esperimento di Hall entrambi i portatori vengono spinti dalla forza di Lorentz nella stessa direzione.
+Posso quindi determinare la tipologia di drogaggio a secondo del segno della tensione di Hall rilevata.
+
 \chapter{Variazioni di Temperatuta}
 
 	\section{Mobilità}
 
 		\subsection{Scattering fononico}
 
+
+
 		\subsection{Urti con atmoni ionizzati}
+
+
 
 	\section{Densità di stati equivalente}
 
@@ -359,34 +408,23 @@
 
 
 	\[
-	R=
+	R=\frac{4\pi \epsilon_0 \epsilon_r \hslash^2 }{q^2 m}
 	\]
 
 	\[
-	E=
+	E=-\frac{q^4 m}{2\hslash^2 (4\pi\epsilon_o\epsilon_r)^2}
 	\]
-
-
-
-
-
-
-
-
-
-
-
 
 	\begin{itemize}
 	\item Quantizzazione di Bohr:   $mrv=\hslash$
-	\item Orbita circolare\footnote{Uguaglianza tra forza centripeta e forza elettrostatica}:	$ m \frac {v^2} {r} = \frac{q^2}{4\pi \epsilon r^2}$
+	\item Orbita circolare\footnote{Uguaglianza tra forza centripeta e forza elettrostatica}:	$ m \frac {v^2} {R} = \frac{q^2}{4\pi \epsilon r^2}$
 	\item Energia totale:	$E=E_c+E_p=\frac{1}{2}mv^2+qv=\frac{1}{2}mv^2-\frac{q^2}{4\pi \epsilon r}$
 	\end{itemize}
 		
 		\subsection{Raggio}
 
 		\[
-		R=\frac{4\pi \epsilon \hslash^2}{q^2 m}	
+		R=\frac{4\pi \epsilon \hslash^2 }{q^2 m}	
 		\]
 
 		\subsection{Energia}
@@ -400,6 +438,8 @@
 \chapter{Velocità e campo di Saturazione}
 
 \chapter{Eccitoni}
+
+
 
 \chapter{Pacchetti d'onda}
 
